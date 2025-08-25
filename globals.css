@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 9% 46%;
+    --card: 210 40% 98%;
+    --card-foreground: 220 9% 46%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 9% 46%;
+    --primary: 188 95% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 188 95% 42%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 188 95% 42%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 22 82% 39%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 0 0% 100%;
+    --ring: 188 95% 35%;
+    --chart-1: 220 9% 46%;
+    --chart-2: 188 95% 42%;
+    --chart-3: 188 95% 35%;
+    --chart-4: 25 95% 53%;
+    --chart-5: 22 82% 39%;
+    --radius: 0.5rem;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 220 9% 46%;
+    --sidebar-primary: 188 95% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 188 95% 42%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 188 95% 35%;
+    /* Added font family variables for Space Grotesk and DM Sans */
+    --font-sans: var(--font-dm-sans);
+    --font-heading: var(--font-space-grotesk);
+  }
+  .dark {
+    --background: 220 9% 4%;
+    --foreground: 0 0% 95%;
+    --card: 220 9% 4%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 9% 4%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 188 95% 42%;
+    --primary-foreground: 220 9% 4%;
+    --secondary: 188 95% 35%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 9% 15%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 188 95% 42%;
+    --accent-foreground: 220 9% 4%;
+    --destructive: 22 82% 39%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 9% 15%;
+    --input: 220 9% 15%;
+    --ring: 188 95% 42%;
+    --chart-1: 188 95% 50%;
+    --chart-2: 188 95% 42%;
+    --chart-3: 188 95% 35%;
+    --chart-4: 25 95% 53%;
+    --chart-5: 22 82% 39%;
+    --sidebar-background: 220 9% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 188 95% 42%;
+    --sidebar-primary-foreground: 220 9% 4%;
+    --sidebar-accent: 188 95% 35%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 9% 15%;
+    --sidebar-ring: 188 95% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
